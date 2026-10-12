@@ -1,0 +1,332 @@
+<title>UNMdP Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: selector de carrera + grafo vertical por cuatrimestre; filas = períodos del plan, requisitos al final */
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --ink:#18212e; --muted:#5d6878; --line:#c9d0da;
+  --ok:#2e7d4f; --ok-bg:#dff1e6; --go:#b26a00; --go-bg:#fdf0d8; --no:#7b8594; --no-bg:#eceff3;
+  --reg:#0b6e86; --reg-bg:#dcf0f5;
+  --accent:#1f4f8a; --hl:#1f4f8a;
+  --f-display:"Archivo",system-ui,sans-serif; --f-body:"Source Sans 3",system-ui,sans-serif; --f-mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121821; --surface:#1a2230; --ink:#e6ebf2; --muted:#98a3b3; --line:#334055;
+  --ok:#6fd39a; --ok-bg:#183326; --go:#f0b45a; --go-bg:#3a2c14; --no:#8a95a6; --no-bg:#222b38;
+  --reg:#5fc6dc; --reg-bg:#13313a;
+  --accent:#8cb8f0; --hl:#8cb8f0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121821; --surface:#1a2230; --ink:#e6ebf2; --muted:#98a3b3; --line:#334055;
+  --ok:#6fd39a; --ok-bg:#183326; --go:#f0b45a; --go-bg:#3a2c14; --no:#8a95a6; --no-bg:#222b38;
+  --reg:#5fc6dc; --reg-bg:#13313a;
+  --accent:#8cb8f0; --hl:#8cb8f0; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:24px 48px;display:grid;gap:18px}
+.eyebrow{font-family:var(--f-display);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+header h1{font-family:var(--f-display);font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);margin:.2rem 0 0;letter-spacing:-.01em;text-wrap:balance}
+header p{margin:.35rem 0 0;color:var(--muted);max-width:70ch}
+.pick{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.pick label{font-weight:600;font-size:13px;color:var(--muted)}
+.field{display:grid;gap:4px;min-width:0;flex:1 1 260px;max-width:420px}
+.field select{width:100%}
+.pick .meta{align-self:flex-end;padding-bottom:8px}
+select{font:inherit;font-weight:600;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:7px 10px;max-width:100%}
+select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pick .meta{color:var(--muted);font-size:14px}
+.bar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.legend{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;font-size:13px;font-weight:600}
+.chip.ok{background:var(--ok-bg);color:var(--ok)} .chip.reg{background:var(--reg-bg);color:var(--reg)} .chip.go{background:var(--go-bg);color:var(--go)} .chip.no{background:var(--no-bg);color:var(--no)}
+.chip b{font-family:var(--f-mono);font-weight:500}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;padding:6px 12px}
+button:hover{border-color:var(--accent)} button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.detail{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;min-height:52px}
+.detail .code{font-family:var(--f-mono);color:var(--muted)}
+.detail h2{font-family:var(--f-display);font-size:1.1rem;margin:0}
+.detail .meta{color:var(--muted);font-size:14px;min-width:0;flex:1 1 320px}
+.detail .note{flex-basis:100%;color:var(--ok);font-weight:600}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.seg button{border:0;border-radius:0;padding:7px 12px;background:var(--surface);font-weight:600;color:var(--muted)}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
+.seg button[data-i="1"][aria-pressed="true"]{background:var(--reg)}
+.seg button[data-i="2"][aria-pressed="true"]{background:var(--ok)}
+.regla{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-size:14px}
+.regla legend{float:left;padding:0;margin-right:6px;font-weight:600;color:var(--muted)}
+.regla label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.regla input{accent-color:var(--accent)}
+.graph{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+svg{display:block;min-width:900px;width:100%;height:auto}
+.rowlabel{font-family:var(--f-display);font-weight:700;font-size:12px;fill:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.rowline{stroke:var(--line);stroke-dasharray:2 4}
+.edge{fill:none;stroke:var(--line);stroke-width:1.3;transition:opacity .15s}
+.edge.up{stroke:var(--hl);stroke-width:2.2} .edge.down{stroke:var(--go);stroke-width:2.2}
+.dim .edge:not(.up):not(.down){opacity:.12}
+.node{cursor:pointer}
+.node rect{stroke-width:1.5;transition:opacity .15s}
+.node.ok rect{fill:var(--ok-bg);stroke:var(--ok)} .node.reg rect{fill:var(--reg-bg);stroke:var(--reg)} .node.go rect{fill:var(--go-bg);stroke:var(--go)} .node.no rect{fill:var(--no-bg);stroke:var(--line)}
+.node.alt rect{stroke-dasharray:4 3}
+.node text{fill:var(--ink);font-size:12.5px;pointer-events:none}
+.node .ncode{font-family:var(--f-mono);font-size:11px;fill:var(--muted)}
+.node.ok .ncode{fill:var(--ok)} .node.reg .ncode{fill:var(--reg)} .node.go .ncode{fill:var(--go)}
+.dim .node:not(.sel):not(.rel) rect{opacity:.3} .dim .node:not(.sel):not(.rel) text{opacity:.35}
+.node.sel rect{stroke:var(--accent);stroke-width:3}
+.node:focus-visible rect{stroke:var(--accent);stroke-width:3} .node:focus{outline:none}
+.notes h3{font-family:var(--f-display);font-size:.95rem;margin:0 0 6px}
+.notes ul{margin:0;padding-left:18px;color:var(--muted);line-height:1.55;max-width:80ch}
+.src{color:var(--muted);font-size:13px;margin:0} .src a{color:var(--accent)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow" id="eyebrow">UNMdP Map</p>
+    <h1 id="titulo">Correlatividades</h1>
+    <p>Tocá una materia para ver qué necesita (azul) y qué habilita (naranja). Marcá si tenés la cursada aprobada o la materia aprobada, y el grafo recalcula qué podés cursar y qué finales podés rendir. Lo que marcás cuenta en todas las carreras de la facultad que comparten esa materia. Tu avance queda guardado en este navegador.</p>
+  </header>
+  <div class="pick">
+    <div class="field"><label for="facultad">Facultad</label><select id="facultad"></select></div>
+    <div class="field"><label for="carrera">Carrera</label><select id="carrera"></select></div>
+    <span class="meta" id="plan"></span>
+  </div>
+  <div class="bar">
+    <div class="legend">
+      <span class="chip ok">Aprobada <b id="c-ok">0</b></span>
+      <span class="chip reg">Cursada aprobada <b id="c-reg">0</b></span>
+      <span class="chip go">Puedo cursar <b id="c-go">0</b></span>
+      <span class="chip no">Bloqueada <b id="c-no">0</b></span>
+    </div>
+    <button id="reset" type="button">Desmarcar todo</button>
+    <span id="confirm" hidden><button id="reset-yes" type="button">Sí, desmarcar las materias de esta carrera</button> <button id="reset-no" type="button">Cancelar</button></span>
+  </div>
+  <fieldset class="regla">
+    <legend>Para cursar una materia, sus correlativas tienen que tener:</legend>
+    <label><input type="radio" name="regla" id="regla-reg" value="reg" checked> La cursada aprobada</label>
+    <label><input type="radio" name="regla" id="regla-ok" value="ok"> El final aprobado</label>
+  </fieldset>
+  <div class="detail" id="detail"><span class="meta">Ninguna materia seleccionada.</span></div>
+  <div class="graph"><svg id="g" role="img" aria-label="Grafo de correlatividades"></svg></div>
+  <section class="notes"><h3>Notas del plan</h3><ul id="notas"></ul></section>
+  <p class="src" id="src"></p>
+</div>
+
+<script>
+const FACULTADES = __DATA__;
+let F;
+const NS = "http://www.w3.org/2000/svg";
+const svg = document.getElementById("g");
+const W = 1140, NW = 150, NH = 52, GAPX = 14, RH = 112, TOP = 30, LEFT = 120, PER_LINE = 6;
+const ALT = new Set(["Ciclo de orientación", "Optativas"]);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); (p || svg).appendChild(e); return e; };
+
+let C, mats, by, deps, est = {}, regla = "reg", nodes, edges, sel;
+
+const periodKey = m => {
+  if (!m.anio) return "9-REQ";
+  if (m.anio[0] === "O") return "8-" + m.anio;
+  return m.anio + "-" + (m.cuat ? m.cuat[0] : "0");
+};
+const periodLabel = k => {
+  const [a, c] = k.split("-");
+  if (c === "REQ") return ["Requisitos", "instrum."];
+  if (c === "O1") return ["Optativas", "Grupo I"];
+  if (c === "O2") return ["Optativas", "Grupo II"];
+  if (c === "0") return [a + "º año", "Ingreso"];
+  return [a + "º año", c + "º cuat."];
+};
+const known = c => by[c] !== undefined;
+// Estado de cada materia: sin marcar, "reg" (cursada aprobada) u "ok" (aprobada con final o promoción).
+const lvl = c => est[c] === "ok" ? 2 : est[c] === "reg" ? 1 : 0;
+const need = () => regla === "ok" ? 2 : 1;  // lo que se pide de cada correlativa para cursar
+const puedeCursar = m => m.corr.every(c => !known(c) || lvl(c) >= need());
+const puedeRendir = m => m.corr.every(c => !known(c) || lvl(c) >= 2);
+const state = m => lvl(m.cod) === 2 ? "ok" : lvl(m.cod) === 1 ? "reg" : puedeCursar(m) ? "go" : "no";
+const LABEL = { ok: "Aprobada", reg: "Cursada aprobada", go: "Puedo cursar", no: "Bloqueada" };
+
+// Se guarda por facultad: un mismo código cuenta para todas sus carreras.
+const pre = () => F.id === "eco" ? "fceys" : F.id;
+const load = () => { try {
+  const v = localStorage.getItem(pre() + "-estados");
+  if (v !== null) return JSON.parse(v);
+  // migración: versiones anteriores guardaban solo aprobadas (por facultad o por carrera)
+  const o = {}, keys = [pre() + "-aprobadas", ...F.carreras.map(c => pre() + "-aprobadas:" + c.id), ...(F.id === "eco" ? ["cp-aprobadas"] : [])];
+  keys.forEach(k => JSON.parse(localStorage.getItem(k) || "[]").forEach(x => o[String(x)] = "ok"));
+  return o;
+} catch (e) { return {}; } };
+const save = () => { try { localStorage.setItem(pre() + "-estados", JSON.stringify(est)); } catch (e) {} };
+const loadRegla = () => { try { return localStorage.getItem(pre() + "-regla") || F.regla || "reg"; } catch (e) { return F.regla || "reg"; } };
+const saveRegla = () => { try { localStorage.setItem(pre() + "-regla", regla); } catch (e) {} };
+
+function wrap(t, max) { const w = t.split(" "), out = []; let l = ""; w.forEach(x => { if ((l + " " + x).trim().length > max && l) { out.push(l); l = x; } else l = (l + " " + x).trim(); }); out.push(l); if (out.length > 2) out[1] = out[1] + "…"; return out.slice(0, 2); }
+
+function build(id) {
+  C = F.carreras.find(c => c.id === id) || F.carreras[0];
+  document.getElementById("eyebrow").textContent = `UNMdP Map · Facultad de ${F.nombre}`;
+  mats = C.materias; by = Object.fromEntries(mats.map(m => [m.cod, m]));
+  deps = {}; mats.forEach(m => m.corr.forEach(c => { if (known(c)) (deps[c] ||= []).push(m.cod); }));
+  est = load(); regla = loadRegla(); sel = null;
+  document.querySelectorAll('input[name="regla"]').forEach(r => r.checked = r.value === regla);
+  document.getElementById("titulo").textContent = C.nombre;
+  document.getElementById("plan").textContent = `${C.plan} · ${C.horas} hs totales`;
+  const notas = [...C.notas, ...(F.notas || [])];
+  document.getElementById("notas").innerHTML = (notas.length ? notas : ["Sin observaciones."]).map(n => `<li>${esc(n)}</li>`).join("");
+  document.getElementById("src").innerHTML = `Fuente: <a href="${esc(C.url)}">plan de estudio oficial en eco.mdp.edu.ar</a>. Verificá siempre con la facultad.`;
+
+  // filas por período, orden por baricentro para reducir cruces
+  const keys = [...new Set(mats.map(periodKey))].sort();
+  const groups = keys.map(k => mats.filter(m => periodKey(m) === k));
+  const pos = {};
+  const setPos = () => groups.forEach(r => r.forEach((m, i) => pos[m.cod] = i - (r.length - 1) / 2));
+  setPos();
+  for (let it = 0; it < 6; it++) groups.forEach((r, ri) => {
+    if (!ri) return;
+    const bary = m => { const n = m.corr.filter(known).concat(deps[m.cod] || []); return n.length ? n.reduce((s, c) => s + pos[c], 0) / n.length : pos[m.cod]; };
+    r.sort((a, b) => bary(a) - bary(b)); setPos();
+  });
+
+  // líneas visuales (máx. PER_LINE nodos) y coordenadas
+  svg.innerHTML = "";
+  const xy = {}, lineOf = {}; let line = 0;
+  const cx = LEFT + (W - LEFT) / 2;
+  groups.forEach((r, gi) => {
+    const y0 = TOP + line * RH, [l1, l2] = periodLabel(keys[gi]);
+    el("text", { x: 14, y: y0 + NH / 2 - 2, class: "rowlabel" }).textContent = l1;
+    el("text", { x: 14, y: y0 + NH / 2 + 14, class: "rowlabel" }).textContent = l2;
+    for (let i = 0; i < r.length; i += PER_LINE) {
+      const chunk = r.slice(i, i + PER_LINE), y = TOP + line * RH;
+      chunk.forEach((m, j) => { xy[m.cod] = { x: cx + (j - (chunk.length - 1) / 2) * (NW + GAPX) - NW / 2, y }; lineOf[m.cod] = line; });
+      line++;
+    }
+    el("line", { x1: 12, x2: W - 12, y1: TOP + line * RH - (RH - NH) / 2, y2: TOP + line * RH - (RH - NH) / 2, class: "rowline" });
+  });
+  svg.setAttribute("viewBox", `0 0 ${W} ${TOP + line * RH - (RH - NH) / 2 + 8}`);
+
+  const gE = el("g", {}), gN = el("g", {});
+  edges = [];
+  mats.forEach(m => m.corr.filter(known).forEach(c => {
+    const a = xy[c], b = xy[m.cod];
+    let d;
+    if (lineOf[c] < lineOf[m.cod]) {
+      const x1 = a.x + NW / 2, y1 = a.y + NH, x2 = b.x + NW / 2, y2 = b.y, k = Math.max(36, (y2 - y1) * .45);
+      d = `M${x1},${y1} C${x1},${y1 + k} ${x2},${y2 - k} ${x2},${y2}`;
+    } else if (lineOf[c] > lineOf[m.cod]) {
+      const x1 = a.x + NW / 2, y1 = a.y, x2 = b.x + NW / 2, y2 = b.y + NH, k = Math.max(36, (y1 - y2) * .45);
+      d = `M${x1},${y1} C${x1},${y1 - k} ${x2},${y2 + k} ${x2},${y2}`;
+    } else {
+      const l = a.x < b.x, x1 = l ? a.x + NW : a.x, x2 = l ? b.x : b.x + NW, y = a.y + NH / 2;
+      d = `M${x1},${y} C${(x1 + x2) / 2},${y - 30} ${(x1 + x2) / 2},${y - 30} ${x2},${y}`;
+    }
+    edges.push({ from: c, to: m.cod, e: el("path", { d, class: "edge" }, gE) });
+  }));
+
+  nodes = {};
+  mats.forEach(m => {
+    const { x, y } = xy[m.cod], alt = ALT.has(m.ciclo);
+    const g = el("g", { class: "node", transform: `translate(${x},${y})`, tabindex: 0, role: "button", "aria-label": m.cod + " " + m.nombre }, gN);
+    el("rect", { width: NW, height: NH, rx: 6 }, g);
+    const tag = m.ciclo === "Ciclo de orientación" ? " · orient." : m.ciclo === "Optativas" ? " · optativa" : "";
+    const code = el("text", { x: 9, y: 15, class: "ncode" }, g);
+    wrap(m.nombre, 21).forEach((l, i) => el("text", { x: 9, y: 31 + i * 14 }, g).textContent = l);
+    g.addEventListener("click", () => select(m.cod));
+    g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(m.cod); } });
+    nodes[m.cod] = { g, alt, code, tag };
+  });
+  render();
+  const box = svg.parentElement; box.scrollLeft = (box.scrollWidth - box.clientWidth) / 2;
+}
+
+const walk = (start, next) => { const s = new Set(), st = [...start]; while (st.length) { const x = st.pop(); if (!s.has(x)) { s.add(x); st.push(...next(x)); } } return s; };
+let note = "";
+function select(c) { sel = sel === c ? null : c; render(); }
+
+function setEstado(m, target, A) {
+  // subir de estado arrastra a las correlativas (en cadena) al mínimo necesario; bajar no las toca
+  const min = target === 2 ? 2 : target === 1 ? need() : 0;
+  const nuevas = target ? [...A].filter(c => lvl(c) < min).sort((a, b) => parseInt(a) - parseInt(b) || a.localeCompare(b)) : [];
+  const antes = lvl(m.cod);
+  if (target === 0) delete est[m.cod]; else est[m.cod] = target === 2 ? "ok" : "reg";
+  nuevas.forEach(c => est[c] = min === 2 ? "ok" : "reg");
+  note = nuevas.length ? `También se marcaron como ${min === 2 ? "aprobadas" : "cursadas"} ${nuevas.length} correlativa${nuevas.length > 1 ? "s" : ""}: ${nuevas.join(", ")}.` : "";
+  if (target < antes) {
+    const aj = ajustarPosteriores(m.cod);
+    if (aj.length) note = `Se ajustaron ${aj.length} materia${aj.length > 1 ? "s" : ""} posterior${aj.length > 1 ? "es" : ""}, porque no pueden estar en un estado mayor que el que permiten sus correlativas: ${aj.join(", ")}.`;
+  }
+  save(); render(); note = "";
+}
+
+// Máximo estado posible para una materia según sus correlativas:
+// aprobada solo si todas están aprobadas; cursada si cumplen la regla para cursar.
+const maxPermitido = m => m.corr.filter(known).reduce((mx, c) => Math.min(mx, lvl(c) === 2 ? 2 : lvl(c) >= need() ? 1 : 0), 2);
+
+// Al bajar el estado de una materia, recorre en cadena las que dependen de ella y las baja si quedaron por encima de lo permitido.
+function ajustarPosteriores(cod) {
+  const cambiadas = new Set(), cola = [...(deps[cod] || [])];
+  while (cola.length) {
+    const x = cola.shift(), mx = maxPermitido(by[x]);
+    if (lvl(x) > mx) {
+      if (mx === 0) delete est[x]; else est[x] = "reg";
+      cambiadas.add(x); cola.push(...(deps[x] || []));
+    }
+  }
+  return [...cambiadas].sort((a, b) => parseInt(a) - parseInt(b) || a.localeCompare(b));
+}
+
+function render() {
+  const n = { ok: 0, reg: 0, go: 0, no: 0 };
+  mats.forEach(m => {
+    const s = state(m), nd = nodes[m.cod]; n[s]++;
+    nd.g.setAttribute("class", `node ${s}${nd.alt ? " alt" : ""}${sel === m.cod ? " sel" : ""}`);
+    nd.code.textContent = m.cod + (s === "reg" ? (puedeRendir(m) ? " · puede rendir" : " · cursada") : nd.tag);
+  });
+  ["ok", "reg", "go", "no"].forEach(k => document.getElementById("c-" + k).textContent = n[k]);
+  svg.classList.toggle("dim", !!sel);
+  const A = sel ? walk(by[sel].corr.filter(known), x => by[x].corr.filter(known)) : new Set();
+  const D = sel ? walk(deps[sel] || [], x => deps[x] || []) : new Set();
+  [...A, ...D].forEach(c => nodes[c].g.classList.add("rel"));
+  edges.forEach(({ from, to, e }) => e.setAttribute("class", "edge" +
+    (sel && (to === sel || A.has(to)) && A.has(from) ? " up" : sel && (from === sel || D.has(from)) && D.has(to) ? " down" : "")));
+  const d = document.getElementById("detail");
+  if (!sel) { d.innerHTML = '<span class="meta">Ninguna materia seleccionada.</span>'; return; }
+  const m = by[sel], s = state(m);
+  const faltaCursar = m.corr.filter(c => known(c) && lvl(c) < need());
+  const faltaFinal = m.corr.filter(c => known(c) && lvl(c) < 2);
+  const raros = m.corr.filter(c => !known(c));
+  const estadoTxt = s === "go" ? "Podés cursarla." : s === "no" ? `Para cursarla te falta${faltaCursar.length > 1 ? "n" : ""} ${need() === 2 ? "aprobar" : "tener la cursada de"}: ${faltaCursar.join(", ")}.`
+    : s === "reg" ? (faltaFinal.length ? `Para rendir el final te falta${faltaFinal.length > 1 ? "n" : ""} aprobar: ${faltaFinal.join(", ")}.` : "Podés rendir el final.") + (F.vigencia ? " " + F.vigencia : "") : "";
+  const lugar = !m.anio ? "Requisito instrumental" : m.anio[0] === "O" ? "Optativa " + (m.orientacion || "") : `${m.anio}º año${m.cuat ? ", " + (m.cuat.includes("/") ? "cuat. " + m.cuat : m.cuat + "º cuat.") : ", ingreso"}`;
+  const hs = [m.hs_sem && m.hs_sem + " hs/sem", m.hs_cuat && m.hs_cuat + " hs cuatrimestrales", m.hs_bim && m.hs_bim + " hs bimestrales"].filter(Boolean).join(", ");
+  d.innerHTML = `<span class="code">${esc(m.cod)}</span><h2>${esc(m.nombre)}</h2>
+    <span class="chip ${s}">${LABEL[s]}</span>
+    <span class="meta">${esc(lugar)} · ${esc(m.ciclo)}${m.area ? " · " + esc(m.area) : ""}${hs ? " · " + esc(hs) : ""}${m.orientacion && m.ciclo === "Ciclo de orientación" ? " · Orientación " + esc(m.orientacion) : ""}<br>
+    ${(() => { const o = F.carreras.filter(c => c.id !== C.id && c.materias.some(x => x.cod === m.cod)).map(c => c.nombre); return o.length ? `También cuenta para: ${o.map(esc).join(", ")}<br>` : ""; })()}
+    Correlativas: ${m.corr.length ? m.corr.map(c => known(c) ? `${esc(c)} ${esc(by[c].nombre)}${lvl(c) === 2 ? " (aprobada)" : lvl(c) === 1 ? " (cursada)" : ""}` : `${esc(c)} (no figura en este plan)`).join(", ") : "ninguna"}${estadoTxt ? `<br>${esc(estadoTxt)}` : ""}${raros.length ? "<br>Los códigos que no figuran en el plan no se tienen en cuenta." : ""}</span>
+    <div class="seg" role="group" aria-label="Estado de la materia">
+      ${["Sin cursar", "Cursada aprobada", "Aprobada"].map((t, i) => `<button type="button" data-i="${i}" aria-pressed="${lvl(m.cod) === i}">${t}</button>`).join("")}
+    </div>`;
+  d.querySelectorAll(".seg button").forEach(b => b.onclick = () => { const i = +b.dataset.i; if (i !== lvl(m.cod)) setEstado(m, i, A); });
+  if (note) d.insertAdjacentHTML("beforeend", `<span class="meta note">${esc(note)}</span>`);
+}
+
+const facEl = document.getElementById("facultad"), selEl = document.getElementById("carrera");
+facEl.innerHTML = FACULTADES.map(f => `<option value="${f.id}"${f.carreras.length ? "" : " disabled"}>${esc(f.nombre)}${f.carreras.length ? "" : " (próximamente)"}</option>`).join("");
+const setHash = () => { try { history.replaceState(null, "", "#" + F.id + "." + selEl.value); } catch (e) {} };
+function pickFacultad(fid, cid) {
+  F = FACULTADES.find(f => f.id === fid && f.carreras.length) || FACULTADES.find(f => f.carreras.length);
+  facEl.value = F.id;
+  selEl.innerHTML = F.carreras.map(c => `<option value="${c.id}">${esc(c.nombre)}</option>`).join("");
+  if (F.carreras.some(c => c.id === cid)) selEl.value = cid;
+  build(selEl.value);
+}
+// link directo: #eco.contador (también acepta el formato anterior, #contador)
+const [h1, h2] = (location.hash || "").slice(1).split(".");
+const byCarrera = !h2 && FACULTADES.find(f => f.carreras.some(c => c.id === h1));
+pickFacultad(byCarrera ? byCarrera.id : h1, byCarrera ? h1 : h2);
+facEl.addEventListener("change", () => { pickFacultad(facEl.value); setHash(); });
+selEl.addEventListener("change", () => { setHash(); build(selEl.value); });
+const conf = document.getElementById("confirm");
+document.getElementById("reset").onclick = () => conf.hidden = false;
+document.getElementById("reset-no").onclick = () => conf.hidden = true;
+document.getElementById("reset-yes").onclick = () => { mats.forEach(m => delete est[m.cod]); save(); conf.hidden = true; render(); };
+document.querySelectorAll('input[name="regla"]').forEach(r => r.addEventListener("change", () => { regla = r.value; saveRegla(); render(); }));
+</script>

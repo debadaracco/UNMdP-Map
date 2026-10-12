@@ -1,0 +1,5879 @@
+[
+ {
+  "id": "faud",
+  "nombre": "Arquitectura, Urbanismo y Diseño",
+  "url": "http://faud.mdp.edu.ar/",
+  "carreras": []
+ },
+ {
+  "id": "agrarias",
+  "nombre": "Ciencias Agrarias",
+  "url": "https://fca.mdp.edu.ar/sitio/",
+  "carreras": []
+ },
+ {
+  "id": "salud",
+  "nombre": "Ciencias de la Salud y Trabajo Social",
+  "url": "https://salud.mdp.edu.ar",
+  "carreras": []
+ },
+ {
+  "id": "eco",
+  "nombre": "Ciencias Económicas y Sociales",
+  "sigla": "FCEyS",
+  "url": "https://eco.mdp.edu.ar/",
+  "carreras": [
+   {
+    "id": "contador",
+    "nombre": "Contador Público",
+    "plan": "Plan E (2005) · OCS 446/2018",
+    "horas": 2820,
+    "url": "https://eco.mdp.edu.ar/component/content/article/206-plan-de-estudio-contador-publico-2005-plan-e-oca-n-880-04?Itemid=817&catid=184",
+    "notas": [
+     "Ciclo de orientación: se cursa una de las cinco materias, más una electiva obligatoria y optativas."
+    ],
+    "materias": [
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "102",
+      "nombre": "Matemática I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "103",
+      "nombre": "Contabilidad I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "180",
+      "nombre": "Historia Económica y Social I",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "205",
+      "nombre": "Sociología",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "209",
+      "nombre": "Matemática II",
+      "grupo": "I",
+      "hs_sem": 5,
+      "hs_bim": null,
+      "hs_cuat": 80,
+      "corr": [
+       "102"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "314",
+      "nombre": "Macroeconomía I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "101",
+       "209"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "308",
+      "nombre": "Funciones Organizacionales",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "280",
+      "nombre": "Historia Económica y Social II",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "180"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "202",
+      "nombre": "Derecho Constitucional",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "307",
+      "nombre": "Derecho Administrativo",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "210",
+      "nombre": "Contabilidad II",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "103"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "208",
+      "nombre": "Microeconomía I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "101",
+       "209"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "250",
+      "nombre": "Estadística",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "209"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "CO",
+      "cod": "402",
+      "nombre": "Contabilidad III",
+      "grupo": "I",
+      "hs_sem": 5,
+      "hs_bim": null,
+      "hs_cuat": 80,
+      "corr": [
+       "210"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "330",
+      "nombre": "Sistemas de Información",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "103",
+       "308"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "424",
+      "nombre": "Matemática Financiera",
+      "grupo": "I",
+      "hs_sem": 5,
+      "hs_bim": null,
+      "hs_cuat": 80,
+      "corr": [
+       "250"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "340",
+      "nombre": "Derecho Privado",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "202",
+       "307"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "401",
+      "nombre": "Costos",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "210"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "349",
+      "nombre": "Economía y Org. del Sector Público",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "202",
+       "314"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "JU",
+      "cod": "503",
+      "nombre": "Sociedades",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "340"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "201",
+      "nombre": "Metodología de las Ciencias Sociales",
+      "grupo": "III",
+      "hs_sem": 3,
+      "hs_bim": null,
+      "hs_cuat": 48,
+      "corr": [
+       "250"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "CO",
+      "cod": "430",
+      "nombre": "Análisis Económico y Financiero",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "308",
+       "314",
+       "402",
+       "424",
+       "401"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "CO",
+      "cod": "460",
+      "nombre": "Impuestos I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "307",
+       "402",
+       "349"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "425",
+      "nombre": "Derecho del Trabajo y de la Seg. Social",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "307",
+       "340"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "490",
+      "nombre": "Elementos de Adm. de Personal",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [
+       "308"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "491",
+      "nombre": "Elementos de Adm. de Comercialización",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [
+       "308",
+       "314",
+       "250"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "527",
+      "nombre": "Auditoría",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "402",
+       "330",
+       "401",
+       "503"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "SA",
+      "cod": "499",
+      "nombre": "Ética y Responsabilidad Social",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "CO",
+      "cod": "525",
+      "nombre": "Impuestos II",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "460"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "602",
+      "nombre": "Información para Control Gerencial",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "330",
+       "430"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "590",
+      "nombre": "Empresas en Crisis. Títulos de Créd.",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "503",
+       "430",
+       "425",
+       "527"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "805",
+      "nombre": "Práctica Profesional",
+      "grupo": "III",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 100,
+      "corr": [
+       "527",
+       "590",
+       "525"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "510",
+      "nombre": "Normas Contables Comparadas",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "525",
+       "527"
+      ],
+      "orientacion": "Teoría Contable Avanzada"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "560",
+      "nombre": "Org. y Adm. Financiera del Estado",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "349",
+       "460"
+      ],
+      "orientacion": "Gestión Pública"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "565",
+      "nombre": "Creación de Empresas",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "430",
+       "425",
+       "490",
+       "491"
+      ],
+      "orientacion": "Gestión de Org. de la Economía Regional"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "JU",
+      "cod": "592",
+      "nombre": "Contratos Especiales",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": "Derecho Empresario (Jurídico-Contable)"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "504",
+      "nombre": "Análisis y Evaluación de Proyectos",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "430"
+      ],
+      "orientacion": "Gestión Financiera"
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "595",
+      "nombre": "Nivel de Inglés Técnico I",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "AD",
+      "cod": "300",
+      "nombre": "Nivel de Computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "299",
+      "nombre": "Taller Uso de Programas de Computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SI",
+      "cod": "296",
+      "nombre": "Acreditar 30 horas de Investigación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "368",
+      "nombre": "Seminario de Práctica Sociocomunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "298",
+      "nombre": "Acreditar 30 hs Pasantías o Prácticas Profesionales Académicas",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     }
+    ]
+   },
+   {
+    "id": "administracion",
+    "nombre": "Licenciatura en Administración",
+    "plan": "Plan C (2005) · OCS 881/2004",
+    "horas": 2720,
+    "url": "https://eco.mdp.edu.ar/component/content/article/208-plan-de-estudio-lic-en-administracion-2005-plan-c-oca-n-881-04?Itemid=818&catid=184",
+    "notas": [
+     "Ciclo de orientación: se cursa una de las cinco materias, más una electiva obligatoria (192 hs) y optativas."
+    ],
+    "materias": [
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "102",
+      "nombre": "Matemática I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "103",
+      "nombre": "Contabilidad I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "180",
+      "nombre": "Historia Económica y Social I",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "205",
+      "nombre": "Sociología",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "209",
+      "nombre": "Matemática II",
+      "grupo": "I",
+      "hs_sem": 5,
+      "hs_bim": null,
+      "hs_cuat": 80,
+      "corr": [
+       "102"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "314",
+      "nombre": "Macroeconomía I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "101",
+       "209"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "308",
+      "nombre": "Funciones Organizacionales",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "280",
+      "nombre": "Historia Económica y Social II",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "180"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "202",
+      "nombre": "Derecho Constitucional",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "307",
+      "nombre": "Derecho Administrativo",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "226",
+      "nombre": "Valuación y Exposición Contable",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "103"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "208",
+      "nombre": "Microeconomía I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "101",
+       "209"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "250",
+      "nombre": "Estadística",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "209"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "330",
+      "nombre": "Sistema de Información",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "308",
+       "103"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "424",
+      "nombre": "Matemática Financiera",
+      "grupo": "I",
+      "hs_sem": 5,
+      "hs_bim": null,
+      "hs_cuat": 80,
+      "corr": [
+       "250"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "425",
+      "nombre": "Derecho del Trab. y de la Seg. Social",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "202",
+       "307"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "380",
+      "nombre": "Comportamiento Organizacional",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "308"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "SA",
+      "cod": "499",
+      "nombre": "Ética y Responsabilidad Social",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "333",
+      "nombre": "Costos para la toma de decisiones",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "226"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "348",
+      "nombre": "Finanzas y Org. del Sector Público",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "202",
+       "314"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "381",
+      "nombre": "Investigac. de Operaciones en Administ.",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "308",
+       "250"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "244",
+      "nombre": "Derecho Económico",
+      "grupo": "II",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "202",
+       "307"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "435",
+      "nombre": "Decisiones financieras de corto plazo",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "330",
+       "424"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "CO",
+      "cod": "470",
+      "nombre": "Administración Tributaria",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "348"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "441",
+      "nombre": "Administración de Operaciones",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "333",
+       "381"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "437",
+      "nombre": "Administración de la Comercialización",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "250",
+       "330",
+       "333"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "442",
+      "nombre": "Administración de Recursos Humanos",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "330",
+       "425",
+       "380",
+       "499"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "201",
+      "nombre": "Metodología de las Ciencias Sociales",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "381"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "535",
+      "nombre": "Decisiones financieras de largo plazo",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "435"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "542",
+      "nombre": "Teoría de las Decisiones",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "435",
+       "441",
+       "437",
+       "442"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "540",
+      "nombre": "Conduc. Estratég. y Control de Gestión",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "435",
+       "441",
+       "437",
+       "442"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "591",
+      "nombre": "Práct. Profesional en el ámbito judicial",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "425",
+       "244",
+       "470"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "570",
+      "nombre": "Análisis organizacional",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "435",
+       "437",
+       "441",
+       "442"
+      ],
+      "orientacion": "Gestión Estratégica"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "571",
+      "nombre": "Investigación de Mercado",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "201",
+       "437"
+      ],
+      "orientacion": "Comercialización"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "504",
+      "nombre": "Análisis y Evaluación de Proyectos",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "208",
+       "314",
+       "435"
+      ],
+      "orientacion": "Gestión Financiera"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "550",
+      "nombre": "Administración del Estado y Políticas Públicas",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "470"
+      ],
+      "orientacion": "Gestión Pública"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "565",
+      "nombre": "Creación de empresas",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "435",
+       "437",
+       "441",
+       "442"
+      ],
+      "orientacion": "Gestión de Org. de la Economía Regional"
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "595",
+      "nombre": "Nivel de Inglés Técnico I",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "AD",
+      "cod": "300",
+      "nombre": "Nivel de Computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "285",
+      "nombre": "Taller Uso de Programas de Computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SI",
+      "cod": "296",
+      "nombre": "Acreditar 30 horas de Investigación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "367",
+      "nombre": "Seminario de Práctica Sociocomunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "286",
+      "nombre": "Acreditar 30 horas Pasantías o Prácticas Profesionales Académicas",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     }
+    ]
+   },
+   {
+    "id": "economia",
+    "nombre": "Licenciatura en Economía",
+    "plan": "Plan E (2005) · RM 1281/2019",
+    "horas": 2906,
+    "url": "https://eco.mdp.edu.ar/component/content/article/207-plan-de-estudio-lic-en-economia-2005-plan-e-oca-n-882-04?Itemid=819&catid=184",
+    "notas": [
+     "Ciclo de orientación: se cursa una de las tres materias, más una electiva obligatoria (192 hs) y optativas.",
+     "En la página, la fila de Política Económica II (505) tiene las horas corridas de columna; se tomó 4 hs/sem y 64 hs cuatrimestrales.",
+     "Estadística para Economistas (302) pide 300, que es el requisito Nivel de Computación."
+    ],
+    "materias": [
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "102",
+      "nombre": "Matemática I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "103",
+      "nombre": "Contabilidad I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "180",
+      "nombre": "Historia Económica y Social I",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "108",
+      "nombre": "Matemática para Economistas I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "102"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "314",
+      "nombre": "Macroeconomía I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "101",
+       "108"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "280",
+      "nombre": "Historia Económica y Social II",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "180"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "202",
+      "nombre": "Derecho Constitucional",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "307",
+      "nombre": "Derecho Administrativo",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "208",
+      "nombre": "Microeconomía I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "101",
+       "108"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "206",
+      "nombre": "Estadística Metodológica",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "108"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "218",
+      "nombre": "Teoría Social y Política",
+      "grupo": "II",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "424",
+      "nombre": "Matemática Financiera",
+      "grupo": "I",
+      "hs_sem": 5,
+      "hs_bim": null,
+      "hs_cuat": 80,
+      "corr": [
+       "108"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "328",
+      "nombre": "Matemática para Economistas II",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "108"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "356",
+      "nombre": "Metodología de la Investigación",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "244",
+      "nombre": "Derecho Económico",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "202",
+       "307"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "448",
+      "nombre": "Macroeconomía II",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "314",
+       "328"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "346",
+      "nombre": "Microeconomía II",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "208",
+       "328"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "302",
+      "nombre": "Estadística para Economistas",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "206",
+       "300"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "SA",
+      "cod": "499",
+      "nombre": "Ética y Responsabilidad Social",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "408",
+      "nombre": "Análisis Económico-Financiero de Emp.",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "103",
+       "424"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "418",
+      "nombre": "Dinero, Crédito y Bancos",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "448"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "407",
+      "nombre": "Economía Internacional",
+      "grupo": "I",
+      "hs_sem": 5,
+      "hs_bim": null,
+      "hs_cuat": 80,
+      "corr": [
+       "448",
+       "346"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "447",
+      "nombre": "Economía Ambiental",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "448",
+       "346"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "409",
+      "nombre": "Política Económica I",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "346"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "410",
+      "nombre": "Econometría I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "302"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "419",
+      "nombre": "Economía Política",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "314",
+       "208",
+       "218"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "349",
+      "nombre": "Economía y Org. del Sector Público",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "202",
+       "314"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "504",
+      "nombre": "Análisis y Evaluación de Proyectos",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "328",
+       "408"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "553",
+      "nombre": "Historia del Pensamiento Económico",
+      "grupo": "II",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "314",
+       "280",
+       "208",
+       "419"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "556",
+      "nombre": "Desarrollo Económico",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "448",
+       "407"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "505",
+      "nombre": "Política Económica II",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "314",
+       "280",
+       "218",
+       "409"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "520",
+      "nombre": "Metodología de la Invest. Aplicada",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [
+       "346",
+       "356",
+       "410",
+       "419",
+       "448"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "548",
+      "nombre": "Desarrollo Regional",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "556"
+      ],
+      "orientacion": "Desarrollo Regional"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "549",
+      "nombre": "Teoría de la Firma y de la Organización Industrial",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "409"
+      ],
+      "orientacion": "Economía de Empresas"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "550",
+      "nombre": "Administración del Estado y Políticas Públicas",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "349"
+      ],
+      "orientacion": "Estado y Políticas Públicas"
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "598",
+      "nombre": "Nivel de Inglés Técnico I",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "599",
+      "nombre": "Nivel de Inglés Técnico II",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "AD",
+      "cod": "300",
+      "nombre": "Nivel de Computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "289",
+      "nombre": "Taller Uso de Programas de Computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SI",
+      "cod": "296",
+      "nombre": "Acreditar 30 horas de Investigación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "365",
+      "nombre": "Seminario de Práctica Sociocomunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "290",
+      "nombre": "Acreditar 30 horas Pasantías o Prácticas Profesionales Académicas",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "EC",
+      "cod": "607",
+      "nombre": "Tesina de Graduación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     }
+    ]
+   },
+   {
+    "id": "turismo",
+    "nombre": "Licenciatura en Turismo",
+    "plan": "Plan E (2005) · OCS 370/2004 y 513/2009",
+    "horas": 2688,
+    "url": "https://eco.mdp.edu.ar/plan-de-estudio-turismo",
+    "notas": [
+     "Ciclo de orientación: se cursa una de las tres materias, más una electiva obligatoria (192 hs) y optativas.",
+     "Inglés Técnico (399) figura con correlativas 598 y 597. El 598 no aparece en este plan (el Inglés Técnico I de Turismo es 596): verificalo con la facultad."
+    ],
+    "materias": [
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "161",
+      "nombre": "Introducción al Turismo",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "114",
+      "nombre": "Introducción a la Matemática",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "180",
+      "nombre": "Historia Económica y Social I",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "158",
+      "nombre": "Sociología Aplicada",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "216",
+      "nombre": "El Arte en la cultura",
+      "grupo": "II",
+      "hs_sem": 3,
+      "hs_bim": null,
+      "hs_cuat": 48,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "202",
+      "nombre": "Derecho Constitucional",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "307",
+      "nombre": "Derecho Administrativo",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "280",
+      "nombre": "Historia Económica y Social II",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "180"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "CO",
+      "cod": "308",
+      "nombre": "Funciones Organizacionales",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "215",
+      "nombre": "Antropología cultural",
+      "grupo": "II",
+      "hs_sem": 3,
+      "hs_bim": null,
+      "hs_cuat": 48,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "277",
+      "nombre": "Espacios Turísticos Mundiales",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "251",
+      "nombre": "Estadística Aplicada",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "114"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "227",
+      "nombre": "Contabilidad General",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "323",
+      "nombre": "Espacios Turísticos Americanos",
+      "grupo": "II",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "277"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "324",
+      "nombre": "Economía Aplicada",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "101"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "112",
+      "nombre": "Recursos Naturales",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "356",
+      "nombre": "Metodología de la Investigación",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "113",
+      "nombre": "Teoría del Turismo y la Recreación",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "161"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "325",
+      "nombre": "Organizaciones de Alojamiento y Recreación",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "308"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "207",
+      "nombre": "Recursos Culturales",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "216",
+       "215"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "3",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "465",
+      "nombre": "Psicología de Grupos",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "CO",
+      "cod": "349",
+      "nombre": "Economía y Org. del Sector Público",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "202",
+       "324"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "432",
+      "nombre": "Adm. Financiera de Organizaciones Turísticas",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "324"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "481",
+      "nombre": "Agencias de Viajes y Transportes",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "433",
+      "nombre": "Comercialización Aplicada",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "308"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "SA",
+      "cod": "399",
+      "nombre": "Inglés Técnico",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "598",
+       "597"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "482",
+      "nombre": "Gestión Pública de Turismo",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "349"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "483",
+      "nombre": "Investigación Aplicada al Turismo",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "356"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "4",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "434",
+      "nombre": "Gestión de Personal de Organizac. Turísticas",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "308",
+       "465"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "508",
+      "nombre": "Política y planificación",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "113"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "583",
+      "nombre": "Proyectos Turísticos",
+      "grupo": "III",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "349",
+       "432"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "1",
+      "area": "SA",
+      "cod": "499",
+      "nombre": "Ética y Responsabilidad Social",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo profesional",
+      "anio": "5",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "509",
+      "nombre": "Práctica profesional en Turismo",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "325",
+       "481",
+       "482"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "550",
+      "nombre": "Administración del Estado y Políticas Públicas",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "349",
+       "482"
+      ],
+      "orientacion": "Sector Público"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "570",
+      "nombre": "Análisis Organizacional",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "432",
+       "433",
+       "434"
+      ],
+      "orientacion": "Sector Privado"
+     },
+     {
+      "ciclo": "Ciclo de orientación",
+      "anio": "5",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "511",
+      "nombre": "Gestión Ambiental",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "112",
+       "483"
+      ],
+      "orientacion": "Ambiental"
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "596",
+      "nombre": "Nivel de Inglés Técnico I",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "597",
+      "nombre": "Nivel de Inglés Técnico II",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "AD",
+      "cod": "300",
+      "nombre": "Nivel de Computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "287",
+      "nombre": "Taller Uso de Programas de Computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SI",
+      "cod": "296",
+      "nombre": "Acreditar 30 horas de Investigación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "364",
+      "nombre": "Seminario de Práctica Sociocomunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "288",
+      "nombre": "Acreditar 30 horas Pasantías o Prácticas Profesionales Académicas",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     }
+    ]
+   },
+   {
+    "id": "profesorado",
+    "nombre": "Profesorado Universitario en Economía",
+    "plan": "OCA 2344/2011 y 125/2018",
+    "horas": 2750,
+    "url": "https://eco.mdp.edu.ar/component/content/article/209-plan-de-estudio-profesorado-universitario-en-economia-a?Itemid=821&catid=184",
+    "notas": [
+     "Optativas: 96 hs del Grupo I y 64 hs del Grupo II. En el plan no tienen año asignado; acá aparecen al final."
+    ],
+    "materias": [
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "102",
+      "nombre": "Matemática I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "103",
+      "nombre": "Contabilidad I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "180",
+      "nombre": "Historia Económica y Social I",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "108",
+      "nombre": "Matemática para Economistas I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "102"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "SA",
+      "cod": "1001",
+      "nombre": "Problemática Educativa",
+      "grupo": "",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "314",
+      "nombre": "Macroeconomía I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "101",
+       "108"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "280",
+      "nombre": "Historia Económica y Social II",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "180"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "202",
+      "nombre": "Derecho Constitucional",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "SA",
+      "cod": "1002",
+      "nombre": "Sistema Educativo y Curriculum",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "1001"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "208",
+      "nombre": "Microeconomía I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "101",
+       "108"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "206",
+      "nombre": "Estadística Metodológica",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "108"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "CS",
+      "cod": "218",
+      "nombre": "Teoría Social y Política",
+      "grupo": "II",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "1",
+      "area": "SA",
+      "cod": "1003",
+      "nombre": "Planeamiento y Gestión Institucional",
+      "grupo": "",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "1002"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "356",
+      "nombre": "Metodología de la Investigación",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "1",
+      "area": "SA",
+      "cod": "1004",
+      "nombre": "Adolescencia, Educación y Cultura",
+      "grupo": "",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "308",
+      "nombre": "Funciones Organizacionales",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo superior",
+      "anio": "3",
+      "cuat": "2",
+      "area": "SA",
+      "cod": "1005",
+      "nombre": "Didáctica General",
+      "grupo": "",
+      "hs_sem": 10,
+      "hs_bim": null,
+      "hs_cuat": 160,
+      "corr": [
+       "1003"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo superior",
+      "anio": "3",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "419",
+      "nombre": "Economía Política",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "314",
+       "208",
+       "218"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo superior",
+      "anio": "3",
+      "cuat": "2",
+      "area": "SA",
+      "cod": "499",
+      "nombre": "Ética y Responsabilidad Social",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo superior",
+      "anio": "4",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "553",
+      "nombre": "Historia del Pensamiento Económico",
+      "grupo": "II",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "314",
+       "280",
+       "208",
+       "419"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo superior",
+      "anio": "4",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "1010",
+      "nombre": "Política Económica Argentina",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "314",
+       "280",
+       "218"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo superior",
+      "anio": "4",
+      "cuat": "1",
+      "area": "SA",
+      "cod": "1006",
+      "nombre": "Didáctica y Práctica de la Enseñanza I",
+      "grupo": "III",
+      "hs_sem": 9,
+      "hs_bim": null,
+      "hs_cuat": 144,
+      "corr": [
+       "1005",
+       "103",
+       "308",
+       "419"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo superior",
+      "anio": "4",
+      "cuat": "2",
+      "area": "SA",
+      "cod": "1007",
+      "nombre": "Didáctica y Práctica de la Enseñanza II",
+      "grupo": "III",
+      "hs_sem": 9,
+      "hs_bim": null,
+      "hs_cuat": 144,
+      "corr": [
+       "1006"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo superior",
+      "anio": "4",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "349",
+      "nombre": "Economía y Org. del Sector Público",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "103",
+       "314",
+       "202"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O1",
+      "cuat": "1",
+      "area": "FH",
+      "cod": "1011",
+      "nombre": "Introducción a las Ciencias Políticas",
+      "grupo": "",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "280",
+       "419"
+      ],
+      "orientacion": "Grupo I"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O1",
+      "cuat": "1",
+      "area": "FH",
+      "cod": "1012",
+      "nombre": "Filosofía de la Educación",
+      "grupo": "",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": "Grupo I"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O1",
+      "cuat": "1",
+      "area": "FH",
+      "cod": "1013",
+      "nombre": "Introducción a la Psicología",
+      "grupo": "",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": "Grupo I"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O1",
+      "cuat": "1",
+      "area": "FH",
+      "cod": "1014",
+      "nombre": "Psicología de la Educación",
+      "grupo": "",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": "Grupo I"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O1",
+      "cuat": "1",
+      "area": "FH",
+      "cod": "1015",
+      "nombre": "Sociología del Desarrollo",
+      "grupo": "",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "218",
+       "419"
+      ],
+      "orientacion": "Grupo I"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O1",
+      "cuat": "1",
+      "area": "FH",
+      "cod": "1016",
+      "nombre": "Pensamiento Social Latinoamericano",
+      "grupo": "",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "218",
+       "419"
+      ],
+      "orientacion": "Grupo I"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "1030",
+      "nombre": "Adm. del Estado y Políticas Públicas",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "349"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "1031",
+      "nombre": "Teoría de la Firma y de la Org. Industrial",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "208",
+       "314"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "1032",
+      "nombre": "Desarrollo Económico",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "208",
+       "314"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "1033",
+      "nombre": "Mercado de Trabajo y Relaciones Laborales",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "208",
+       "314"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "1034",
+      "nombre": "Economía Ambiental",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "208",
+       "314"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "1035",
+      "nombre": "Las Organizaciones Asociativas y la Economía Solidaria",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "419"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "1036",
+      "nombre": "Sistemas de Información",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "103",
+       "308"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "1037",
+      "nombre": "Sector Pesquero y Org. Industrial",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "208",
+       "314"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "1038",
+      "nombre": "Políticas Pesqueras",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": 32,
+      "hs_cuat": null,
+      "corr": [
+       "208",
+       "314"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "1039",
+      "nombre": "Estructura Económica Mundial y Argentina",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "208",
+       "314"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "1040",
+      "nombre": "Economía de los Mercados Agrarios",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "208",
+       "314"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "1041",
+      "nombre": "Creación de Empresas",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "308",
+       "103"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Optativas",
+      "anio": "O2",
+      "cuat": "2",
+      "area": "EC",
+      "cod": "1042",
+      "nombre": "Metodología de la Investigación Aplicada",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "208",
+       "314",
+       "356"
+      ],
+      "orientacion": "Grupo II"
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "1",
+      "area": "SA",
+      "cod": "598",
+      "nombre": "Nivel de Inglés Técnico I",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "300",
+      "nombre": "Nivel de Computación",
+      "grupo": "",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "1",
+      "area": "SA",
+      "cod": "1050",
+      "nombre": "Taller de Nuevas Tecnologías de la Información y la Conectividad",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "1",
+      "area": "SA",
+      "cod": "1051",
+      "nombre": "Taller de Sistemas de Información Contable",
+      "grupo": "",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "103"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "1",
+      "area": "SE",
+      "cod": "366",
+      "nombre": "Seminario de Práctica Sociocomunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 30,
+      "corr": [
+       "1005"
+      ],
+      "orientacion": ""
+     }
+    ]
+   },
+   {
+    "id": "tec-contable",
+    "nombre": "Tecnicatura Universitaria Contable",
+    "plan": "RM 435/2020",
+    "horas": 1666,
+    "url": "https://eco.mdp.edu.ar/carreras/4551-plan-de-estudio-tec-universitaria-contable",
+    "notas": [
+     "Las materias marcadas 1/2/3 se dictan en más de un cuatrimestre; se ubican en el primero indicado."
+    ],
+    "materias": [
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "291",
+      "nombre": "Taller de Introducción a la Vida Universitaria",
+      "grupo": "III",
+      "hs_sem": 1,
+      "hs_bim": null,
+      "hs_cuat": 16,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "292",
+      "nombre": "Aproximación a las Ciencias Económicas y Sociales",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "293",
+      "nombre": "Aproximación a las Matemáticas",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1/2/3",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1/2/3",
+      "area": "JU",
+      "cod": "1123",
+      "nombre": "Principios de Derecho Público",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1/2/3",
+      "area": "CO",
+      "cod": "103",
+      "nombre": "Contabilidad I",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2/1/3",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2/1/3",
+      "area": "JU",
+      "cod": "340",
+      "nombre": "Derecho Privado",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1123"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2/1/3",
+      "area": "MA",
+      "cod": "114",
+      "nombre": "Introducción a la Matemática",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1/2/3",
+      "area": "AD",
+      "cod": "3001",
+      "nombre": "Sistemas de información de la organización",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "104",
+       "103",
+       "300"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1/2/3",
+      "area": "JU",
+      "cod": "1081",
+      "nombre": "Derecho Comercial",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "340"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1/2/3",
+      "area": "CO",
+      "cod": "3004",
+      "nombre": "Contabilidad Avanzada",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "103",
+       "300"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2/1/3",
+      "area": "CO",
+      "cod": "3005",
+      "nombre": "Elementos de costos",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "104",
+       "3004"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2/1/3",
+      "area": "MA",
+      "cod": "3000",
+      "nombre": "Nociones de Estadística y de Cálculo Financiero",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "114",
+       "300"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2/1/3",
+      "area": "CO",
+      "cod": "3003",
+      "nombre": "Entidades sin fines de lucro",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "3004",
+       "1081"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1/2/3",
+      "area": "CO",
+      "cod": "3006",
+      "nombre": "Elementos de Práctica Tributaria",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "1123",
+       "3004"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1/2/3",
+      "area": "JU",
+      "cod": "425",
+      "nombre": "Derecho del Trabajo y la Seguridad Social",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1081"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2/1/3",
+      "area": "AD",
+      "cod": "3002",
+      "nombre": "Nociones de administración financiera",
+      "grupo": "I",
+      "hs_sem": 5,
+      "hs_bim": null,
+      "hs_cuat": 80,
+      "corr": [
+       "3004",
+       "3000"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2/1/3",
+      "area": "CO",
+      "cod": "3007",
+      "nombre": "Seminario de Prácticas Integradas",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "3006",
+       "3001",
+       "425"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "AD",
+      "cod": "300",
+      "nombre": "Nivel de Computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "299",
+      "nombre": "Taller de uso de computación",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "300",
+       "103"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "CO",
+      "cod": "3009",
+      "nombre": "Taller de uso de aplicativos impositivos",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 48,
+      "corr": [
+       "3006"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "CO",
+      "cod": "3008",
+      "nombre": "Taller de liquidación de sueldos y jornales",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "425"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "369",
+      "nombre": "Seminario de Práctica Sociocomunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 50,
+      "corr": [
+       "3003"
+      ],
+      "orientacion": ""
+     }
+    ]
+   },
+   {
+    "id": "tec-comercializacion",
+    "nombre": "Tecnicatura Universitaria en Comercialización",
+    "plan": "OCS 1569/2015 · RM 875/2016",
+    "horas": 1634,
+    "url": "https://eco.mdp.edu.ar/tuc",
+    "notas": [],
+    "materias": [
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "291",
+      "nombre": "Taller de Introducción a la vida Universitaria",
+      "grupo": "III",
+      "hs_sem": 1,
+      "hs_bim": null,
+      "hs_cuat": 16,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "292",
+      "nombre": "Aproximación a las Ciencias Económicas y Sociales",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "293",
+      "nombre": "Aproximación a la Matemática",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "114",
+      "nombre": "Introducción a la Matemática",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "227",
+      "nombre": "Contabilidad General",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "1080",
+      "nombre": "Administración de la Comercialización",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "1082",
+      "nombre": "Taller de Competitividad y Posicionamiento",
+      "grupo": "I",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "1081",
+      "nombre": "Derecho Comercial",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "1084",
+      "nombre": "Precios y Costos",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "1082"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1",
+      "area": "CS",
+      "cod": "1085",
+      "nombre": "Comunicación y Medios",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2",
+      "area": "SA",
+      "cod": "499",
+      "nombre": "Ética y Responsabilidad Social",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "251",
+      "nombre": "Estadística Aplicada",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "114"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "1083",
+      "nombre": "Gestión de Productos y Servicios",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1082"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "1087",
+      "nombre": "Comportamiento del Consumidor",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "101",
+       "1082"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "380",
+      "nombre": "Comportamiento Organizacional",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "1081"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "1086",
+      "nombre": "Logística y Distribución",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1082",
+       "1083"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "1089",
+      "nombre": "Planificación y Control Comercial",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1083",
+       "1084",
+       "1085",
+       "1086"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "571",
+      "nombre": "Investigación de Mercados",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "251",
+       "1082",
+       "1087"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "1088",
+      "nombre": "Seminario de Práctica Profesional",
+      "grupo": "III",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "1083",
+       "1084",
+       "1085",
+       "1087"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "595",
+      "nombre": "Nivel de Inglés Técnico I",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "AD",
+      "cod": "300",
+      "nombre": "Nivel de Computación",
+      "grupo": "",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "282",
+      "nombre": "Taller de Uso de Programas (SPSS)",
+      "grupo": "",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "300"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "361",
+      "nombre": "Seminario de Práctica Sociocomunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 50,
+      "corr": [],
+      "orientacion": ""
+     }
+    ]
+   },
+   {
+    "id": "tec-comercio-exterior",
+    "nombre": "Tecnicatura Universitaria en Comercio Exterior",
+    "plan": "OCS 2226/2016 · RM 2625/2017",
+    "horas": 1762,
+    "url": "https://eco.mdp.edu.ar/tuce",
+    "notas": [
+     "Las correlativas 291, 292 y 293 son los Requisitos Curriculares Obligatorios comunes a los ingresantes (112 hs). El plan no los detalla; se usan los nombres de las otras tecnicaturas.",
+     "Marketing Internacional (1113) pide 1084, pero en este plan Precios y Costos figura como 1084B. Se tomó 1084B."
+    ],
+    "materias": [
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "291",
+      "nombre": "Taller de Introducción a la Vida Universitaria",
+      "grupo": "III",
+      "hs_sem": 1,
+      "hs_bim": null,
+      "hs_cuat": 16,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "292",
+      "nombre": "Aproximación a las Ciencias Económicas y Sociales",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "293",
+      "nombre": "Aproximación a la Matemática",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1",
+      "area": "MA",
+      "cod": "114",
+      "nombre": "Introducción a la Matemática",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1",
+      "area": "AD/EC",
+      "cod": "1110",
+      "nombre": "Introducción al Comercio Internacional",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2",
+      "area": "JU",
+      "cod": "1123",
+      "nombre": "Principios de Derecho Público",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "227",
+      "nombre": "Contabilidad General",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1",
+      "area": "SA",
+      "cod": "499",
+      "nombre": "Ética y Responsabilidad Social",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "291",
+       "292",
+       "293"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "1244",
+      "nombre": "Derecho Económico",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1123"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "1111",
+      "nombre": "Estrategias de Comercio Internacional",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "1110"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1",
+      "area": "CO",
+      "cod": "1084B",
+      "nombre": "Precios y Costos",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "251",
+      "nombre": "Estadística Aplicada",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "114"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2",
+      "area": "JU",
+      "cod": "1112",
+      "nombre": "Régimen Aduanero",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1123",
+       "1244"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2",
+      "area": "CO",
+      "cod": "1114",
+      "nombre": "Operatoria de Comercio Exterior",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "1110"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD/CO",
+      "cod": "1115",
+      "nombre": "Logística Internacional",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1110"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "1117",
+      "nombre": "Investigación de Mercados Internacionales",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "101",
+       "1111",
+       "251"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "1116",
+      "nombre": "Teoría del Comercio y Finanzas Internacionales",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "101",
+       "1110"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "1113",
+      "nombre": "Marketing Internacional",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1084B",
+       "1117"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "1118",
+      "nombre": "Seminario de Práctica Profesional",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "1114",
+       "1115",
+       "1117"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "1122",
+      "nombre": "Internacionalización de Pymes Regionales",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1114",
+       "1116"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "598",
+      "nombre": "Nivel de Inglés Técnico I",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "AD",
+      "cod": "1119",
+      "nombre": "Nivel de Computación Sistema María-Malvina",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "360",
+      "nombre": "Seminario de Práctica Sociocomunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 50,
+      "corr": [],
+      "orientacion": ""
+     }
+    ]
+   },
+   {
+    "id": "tec-periodismo",
+    "nombre": "Tecnicatura Universitaria en Periodismo Digital",
+    "plan": "OCS 2322/2017",
+    "horas": 1810,
+    "url": "https://eco.mdp.edu.ar/tupd",
+    "notas": [
+     "Además se acreditan 112 hs de Requisitos Curriculares Obligatorios, comunes a todos los ingresantes.",
+     "Las materias marcadas 1/2/3 se dictan en más de un cuatrimestre; se ubican en el primero indicado."
+    ],
+    "materias": [
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1/2/3",
+      "area": "CS",
+      "cod": "1093",
+      "nombre": "Taller de lectura y escritura académica",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1/2/3",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1/2/3",
+      "area": "CS",
+      "cod": "1091",
+      "nombre": "Teoría de la Comunicación",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "1/2/3",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2/1/3",
+      "area": "CS",
+      "cod": "1092",
+      "nombre": "Introducción a los medios de comunicación",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2/1/3",
+      "area": "AD",
+      "cod": "1104",
+      "nombre": "Tecnologías de la Información",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2/1/3",
+      "area": "CS",
+      "cod": "218",
+      "nombre": "Teoría Social y Política",
+      "grupo": "II",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "1",
+      "cuat": "2/1/3",
+      "area": "JU",
+      "cod": "1090",
+      "nombre": "Derecho y Políticas de Comunicación",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1/2/3",
+      "area": "CS",
+      "cod": "1105",
+      "nombre": "Comunicación y Medios",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1091",
+       "1093",
+       "1104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1/2/3",
+      "area": "CS",
+      "cod": "1094",
+      "nombre": "Lenguajes del periodismo multimedial",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1092",
+       "1093"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1/2/3",
+      "area": "CS",
+      "cod": "1103",
+      "nombre": "Semiótica",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "1093"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "1/2/3",
+      "area": "CS",
+      "cod": "215",
+      "nombre": "Antropología Cultural",
+      "grupo": "II",
+      "hs_sem": 3,
+      "hs_bim": null,
+      "hs_cuat": 48,
+      "corr": [
+       "1093"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2/1/3",
+      "area": "CS",
+      "cod": "1099",
+      "nombre": "Taller de periodismo gráfico",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1094"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2/1/3",
+      "area": "CS",
+      "cod": "1098",
+      "nombre": "Taller de contenidos en redes sociales",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1094",
+       "1104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2/1/3",
+      "area": "AD",
+      "cod": "1106",
+      "nombre": "Creación de Empresas",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "1093"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "2",
+      "cuat": "2/1/3",
+      "area": "AD",
+      "cod": "1108",
+      "nombre": "Opinión Pública",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1090",
+       "1105"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1/2/3",
+      "area": "CS",
+      "cod": "1095",
+      "nombre": "Taller de redacción periodística para medios digitales",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1099",
+       "1104"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1/2/3",
+      "area": "CS",
+      "cod": "1096",
+      "nombre": "Taller de periodismo radial",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1094"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1/2/3",
+      "area": "CS",
+      "cod": "1097",
+      "nombre": "Taller de periodismo televisivo",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1094"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "1/2/3",
+      "area": "AD",
+      "cod": "1107",
+      "nombre": "Las organizaciones asociativas y la economía solidaria",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "1093"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2/1/3",
+      "area": "CS",
+      "cod": "1109",
+      "nombre": "Diseño de Proyectos Digitales Colaborativos",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1090",
+       "1094"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2/1/3",
+      "area": "CS",
+      "cod": "1101",
+      "nombre": "Gestión de la Información en Red",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "1098",
+       "1105",
+       "1090"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Formación general",
+      "anio": "3",
+      "cuat": "2/1/3",
+      "area": "CS",
+      "cod": "1102",
+      "nombre": "Seminario de Práctica Profesional",
+      "grupo": "III",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "1090",
+       "1095",
+       "1096",
+       "1097",
+       "1098"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "598",
+      "nombre": "Nivel de Inglés Técnico I",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "397",
+      "nombre": "Acreditar 50 horas de Práctica Profesional Comunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 50,
+      "corr": [],
+      "orientacion": ""
+     }
+    ]
+   },
+   {
+    "id": "tec-turismo",
+    "nombre": "Tecnicatura Universitaria en Turismo",
+    "plan": "OCA 1902/2015 · RM 518/2017",
+    "horas": 1794,
+    "url": "https://eco.mdp.edu.ar/component/content/article/2214-plan-de-estudio-tec-turismo?catid=184:planes-de-estudio&Itemid=1106",
+    "notas": [],
+    "materias": [
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "291",
+      "nombre": "Taller de Introducción a la Vida Universitaria",
+      "grupo": "III",
+      "hs_sem": 1,
+      "hs_bim": null,
+      "hs_cuat": 16,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "292",
+      "nombre": "Aproximación a las Ciencias Económicas y Sociales",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo introductorio",
+      "anio": "1",
+      "cuat": "",
+      "area": "SA",
+      "cod": "294",
+      "nombre": "Principios Turísticos y Recreativos",
+      "grupo": "III",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "EC",
+      "cod": "101",
+      "nombre": "Introducción a la Economía",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "294"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "CO",
+      "cod": "127",
+      "nombre": "Contabilidad",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "294"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "161",
+      "nombre": "Introducción al Turismo",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "291",
+       "292",
+       "294"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "277",
+      "nombre": "Espacios Turísticos Mundiales",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "161"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "MA",
+      "cod": "151",
+      "nombre": "Estadística Aplicada al Turismo",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "294"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "1",
+      "cuat": "2",
+      "area": "AD",
+      "cod": "104",
+      "nombre": "Principios de Administración",
+      "grupo": "I",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "291",
+       "292",
+       "294"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "JU",
+      "cod": "2001",
+      "nombre": "Turismo y Legislación",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "291",
+       "292",
+       "294"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "219",
+      "nombre": "Turismo y Naturaleza",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "161"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "323",
+      "nombre": "Espacios Turísticos Americanos",
+      "grupo": "II",
+      "hs_sem": 6,
+      "hs_bim": null,
+      "hs_cuat": 96,
+      "corr": [
+       "277"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "235",
+      "nombre": "Alojamiento y Recreación",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "161"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "237",
+      "nombre": "Turismo y Cultura",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "161"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "2",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "2002",
+      "nombre": "Animación sociocultural",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "161"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "391",
+      "nombre": "Viajes y Transporte",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "161"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "1",
+      "area": "AD",
+      "cod": "413",
+      "nombre": "Comercialización Turística",
+      "grupo": "II",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "235"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "1",
+      "area": "TU",
+      "cod": "2003",
+      "nombre": "Práctica Profesional Técnica I",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "235"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "341",
+      "nombre": "Turismo de Reuniones",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "235"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "2004",
+      "nombre": "Sector Público y Turismo",
+      "grupo": "I",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "104",
+       "2001"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Ciclo básico",
+      "anio": "3",
+      "cuat": "2",
+      "area": "TU",
+      "cod": "2005",
+      "nombre": "Práctica Profesional Técnica II",
+      "grupo": "III",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [
+       "391"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "596",
+      "nombre": "Inglés Técnico I",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "597",
+      "nombre": "Inglés Técnico II",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "2006",
+      "nombre": "Nivel de Portugués",
+      "grupo": "",
+      "hs_sem": 4,
+      "hs_bim": null,
+      "hs_cuat": 64,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "AD",
+      "cod": "300",
+      "nombre": "Nivel de Computación",
+      "grupo": "",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "283",
+      "nombre": "Uso de Programas de Computación I",
+      "grupo": "",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "391"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SA",
+      "cod": "284",
+      "nombre": "Uso de Programas de Computación II",
+      "grupo": "",
+      "hs_sem": 2,
+      "hs_bim": null,
+      "hs_cuat": 32,
+      "corr": [
+       "235"
+      ],
+      "orientacion": ""
+     },
+     {
+      "ciclo": "Requisitos instrumentales",
+      "anio": "",
+      "cuat": "",
+      "area": "SE",
+      "cod": "362",
+      "nombre": "Seminario de Práctica Sociocomunitaria",
+      "grupo": "",
+      "hs_sem": null,
+      "hs_bim": null,
+      "hs_cuat": 50,
+      "corr": [],
+      "orientacion": ""
+     }
+    ]
+   }
+  ],
+  "regla": "reg",
+  "vigencia": "La cursada aprobada tiene un año de vigencia (OCA 357/2025).",
+  "notas": [
+   "Los planes no indican si para cursar alcanza con la cursada aprobada de las correlativas o si se pide el final, y no lo encontramos en el régimen académico (OCA 810/2022 y OCA 357/2025). Por defecto se usa la cursada aprobada; podés cambiar la regla arriba del grafo. Para rendir el final se piden las correlativas aprobadas."
+  ]
+ },
+ {
+  "id": "exactas",
+  "nombre": "Ciencias Exactas y Naturales",
+  "url": "http://exactas.mdp.edu.ar",
+  "carreras": []
+ },
+ {
+  "id": "derecho",
+  "nombre": "Derecho",
+  "url": "https://derecho.mdp.edu.ar",
+  "carreras": []
+ },
+ {
+  "id": "humanidades",
+  "nombre": "Humanidades",
+  "url": "https://humanidades.mdp.edu.ar/",
+  "carreras": []
+ },
+ {
+  "id": "ingenieria",
+  "nombre": "Ingeniería",
+  "url": "http://www.fi.mdp.edu.ar/",
+  "carreras": []
+ },
+ {
+  "id": "medicina",
+  "nombre": "Medicina",
+  "url": "http://medicina.mdp.edu.ar/",
+  "carreras": []
+ },
+ {
+  "id": "psicologia",
+  "nombre": "Psicología",
+  "url": "https://psicologia.mdp.edu.ar/",
+  "carreras": []
+ }
+]
