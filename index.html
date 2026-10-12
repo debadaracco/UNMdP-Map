@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Correlativas UNMdP</title>
+<meta name="description" content="UNMdP Map: correlatividades de las carreras de la UNMdP para ver qué materias podés cursar.">
+<title>UNMdP Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
 <style>
@@ -87,7 +88,7 @@ svg{display:block;min-width:900px;width:100%;height:auto}
 <body>
 <div class="wrap">
   <header>
-    <p class="eyebrow" id="eyebrow">Universidad Nacional de Mar del Plata</p>
+    <p class="eyebrow" id="eyebrow">UNMdP Map</p>
     <h1 id="titulo">Correlatividades</h1>
     <p>Tocá una materia para ver qué necesita (azul) y qué habilita (naranja). Marcá si tenés la cursada aprobada o la materia aprobada, y el grafo recalcula qué podés cursar y qué finales podés rendir. Lo que marcás cuenta en todas las carreras de la facultad que comparten esa materia. Tu avance queda guardado en este navegador.</p>
   </header>
@@ -169,7 +170,7 @@ function wrap(t, max) { const w = t.split(" "), out = []; let l = ""; w.forEach(
 
 function build(id) {
   C = F.carreras.find(c => c.id === id) || F.carreras[0];
-  document.getElementById("eyebrow").textContent = `Facultad de ${F.nombre} · UNMdP`;
+  document.getElementById("eyebrow").textContent = `UNMdP Map · Facultad de ${F.nombre}`;
   mats = C.materias; by = Object.fromEntries(mats.map(m => [m.cod, m]));
   deps = {}; mats.forEach(m => m.corr.forEach(c => { if (known(c)) (deps[c] ||= []).push(m.cod); }));
   est = load(); regla = loadRegla(); sel = null;
