@@ -4,7 +4,7 @@
 
 ## Por qué existe
 
-Los planes de estudio se publican como tablas largas, con las correlatividades indicadas por código. Para saber qué te habilita una materia, o qué te falta para anotarte en otra, hay que ir y volver entre filas y códigos. Es fácil equivocarse justo al momento de inscribirse.
+Los planes de estudio se publican como tablas largas, con las correlatividades indicadas por código. Para saber qué te habilita una materia, o qué te falta para anotarte en otra, hay que ir desde el sistema Guaraní y verificar en la materia correspondiente, sin una opción gráfica clara.
 
 Este proyecto arma esas mismas tablas como un mapa: cada materia es un recuadro y cada flecha une una correlativa con la materia que habilita. La idea es ahorrarles tiempo y dudas a los alumnos para que puedan planificar su carrera con más claridad.
 
