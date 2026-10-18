@@ -18,12 +18,12 @@ CB, CP, CO, RI = "Ciclo básico", "Ciclo profesional", "Ciclo de orientación", 
 IN, FG = "Ciclo introductorio", "Formación general"
 
 CARRERAS = [
- dict(id="contador", nombre="Contador Público", plan="Plan E (2005) · OCS 446/2018", horas=2820,
+ dict(id="contador", nivel="grado", nombre="Contador Público", plan="Plan E (2005) · OCS 446/2018", horas=2820,
       url=BASE + "206-plan-de-estudio-contador-publico-2005-plan-e-oca-n-880-04?Itemid=817&catid=184",
       notas=["Ciclo de orientación: se cursa una de las cinco materias, más una electiva obligatoria y optativas."],
       filas=_contador()),
 
- dict(id="administracion", nombre="Licenciatura en Administración", plan="Plan C (2005) · OCS 881/2004", horas=2720,
+ dict(id="administracion", nivel="grado", nombre="Licenciatura en Administración", plan="Plan C (2005) · OCS 881/2004", horas=2720,
       url=BASE + "208-plan-de-estudio-lic-en-administracion-2005-plan-c-oca-n-881-04?Itemid=818&catid=184",
       notas=["Ciclo de orientación: se cursa una de las cinco materias, más una electiva obligatoria (192 hs) y optativas."],
       filas=f"""
@@ -74,7 +74,7 @@ CARRERAS = [
 {RI}|||SA|286|Acreditar 30 horas Pasantías o Prácticas Profesionales Académicas||||||
 """),
 
- dict(id="economia", nombre="Licenciatura en Economía", plan="Plan E (2005) · RM 1281/2019", horas=2906,
+ dict(id="economia", nivel="grado", nombre="Licenciatura en Economía", plan="Plan E (2005) · RM 1281/2019", horas=2906,
       url=BASE + "207-plan-de-estudio-lic-en-economia-2005-plan-e-oca-n-882-04?Itemid=819&catid=184",
       notas=["Ciclo de orientación: se cursa una de las tres materias, más una electiva obligatoria (192 hs) y optativas.",
              "En la página, la fila de Política Económica II (505) tiene las horas corridas de columna; se tomó 4 hs/sem y 64 hs cuatrimestrales.",
@@ -127,7 +127,7 @@ CARRERAS = [
 {RI}|||EC|607|Tesina de Graduación||||||
 """),
 
- dict(id="turismo", nombre="Licenciatura en Turismo", plan="Plan E (2005) · OCS 370/2004 y 513/2009", horas=2688,
+ dict(id="turismo", nivel="grado", nombre="Licenciatura en Turismo", plan="Plan E (2005) · OCS 370/2004 y 513/2009", horas=2688,
       url="https://eco.mdp.edu.ar/plan-de-estudio-turismo",
       notas=["Ciclo de orientación: se cursa una de las tres materias, más una electiva obligatoria (192 hs) y optativas.",
              "Inglés Técnico (399) figura con correlativas 598 y 597. El 598 no aparece en este plan (el Inglés Técnico I de Turismo es 596): verificalo con la facultad."],
@@ -179,7 +179,7 @@ CARRERAS = [
 {RI}|||SA|288|Acreditar 30 horas Pasantías o Prácticas Profesionales Académicas||||||
 """),
 
- dict(id="profesorado", nombre="Profesorado Universitario en Economía", plan="OCA 2344/2011 y 125/2018", horas=2750,
+ dict(id="profesorado", nivel="pregrado", nombre="Profesorado Universitario en Economía", plan="OCA 2344/2011 y 125/2018", horas=2750,
       url=BASE + "209-plan-de-estudio-profesorado-universitario-en-economia-a?Itemid=821&catid=184",
       notas=["Optativas: 96 hs del Grupo I y 64 hs del Grupo II. En el plan no tienen año asignado; acá aparecen al final."],
       filas=f"""
@@ -235,7 +235,7 @@ Optativas|O2|2|EC|1042|Metodología de la Investigación Aplicada|III|2||32|208 
 {RI}||1|SE|366|Seminario de Práctica Sociocomunitaria||||30|1005|
 """),
 
- dict(id="tec-contable", nombre="Tecnicatura Universitaria Contable", plan="RM 435/2020", horas=1666,
+ dict(id="tec-contable", nivel="pregrado", nombre="Tecnicatura Universitaria Contable", plan="RM 435/2020", horas=1666,
       url="https://eco.mdp.edu.ar/carreras/4551-plan-de-estudio-tec-universitaria-contable",
       notas=["Las materias marcadas 1/2/3 se dictan en más de un cuatrimestre; se ubican en el primero indicado."],
       filas=f"""
@@ -265,7 +265,7 @@ Optativas|O2|2|EC|1042|Metodología de la Investigación Aplicada|III|2||32|208 
 {RI}|||SE|369|Seminario de Práctica Sociocomunitaria||||50|3003|
 """),
 
- dict(id="tec-comercializacion", nombre="Tecnicatura Universitaria en Comercialización", plan="OCS 1569/2015 · RM 875/2016", horas=1634,
+ dict(id="tec-comercializacion", nivel="pregrado", nombre="Tecnicatura Universitaria en Comercialización", plan="OCS 1569/2015 · RM 875/2016", horas=1634,
       url="https://eco.mdp.edu.ar/tuc", notas=[],
       filas=f"""
 {IN}|1||SA|291|Taller de Introducción a la vida Universitaria|III|1||16||
@@ -295,7 +295,7 @@ Optativas|O2|2|EC|1042|Metodología de la Investigación Aplicada|III|2||32|208 
 {RI}|||SE|361|Seminario de Práctica Sociocomunitaria||||50||
 """),
 
- dict(id="tec-comercio-exterior", nombre="Tecnicatura Universitaria en Comercio Exterior", plan="OCS 2226/2016 · RM 2625/2017", horas=1762,
+ dict(id="tec-comercio-exterior", nivel="pregrado", nombre="Tecnicatura Universitaria en Comercio Exterior", plan="OCS 2226/2016 · RM 2625/2017", horas=1762,
       url="https://eco.mdp.edu.ar/tuce",
       notas=["Las correlativas 291, 292 y 293 son los Requisitos Curriculares Obligatorios comunes a los ingresantes (112 hs). El plan no los detalla; se usan los nombres de las otras tecnicaturas.",
              "Marketing Internacional (1113) pide 1084, pero en este plan Precios y Costos figura como 1084B. Se tomó 1084B."],
@@ -327,7 +327,7 @@ Optativas|O2|2|EC|1042|Metodología de la Investigación Aplicada|III|2||32|208 
 {RI}|||SE|360|Seminario de Práctica Sociocomunitaria||||50||
 """),
 
- dict(id="tec-periodismo", nombre="Tecnicatura Universitaria en Periodismo Digital", plan="OCS 2322/2017", horas=1810,
+ dict(id="tec-periodismo", nivel="pregrado", nombre="Tecnicatura Universitaria en Periodismo Digital", plan="OCS 2322/2017", horas=1810,
       url="https://eco.mdp.edu.ar/tupd",
       notas=["Además se acreditan 112 hs de Requisitos Curriculares Obligatorios, comunes a todos los ingresantes.",
              "Las materias marcadas 1/2/3 se dictan en más de un cuatrimestre; se ubican en el primero indicado."],
@@ -359,7 +359,7 @@ Optativas|O2|2|EC|1042|Metodología de la Investigación Aplicada|III|2||32|208 
 {RI}|||SE|397|Acreditar 50 horas de Práctica Profesional Comunitaria||||50||
 """),
 
- dict(id="tec-turismo", nombre="Tecnicatura Universitaria en Turismo", plan="OCA 1902/2015 · RM 518/2017", horas=1794,
+ dict(id="tec-turismo", nivel="pregrado", nombre="Tecnicatura Universitaria en Turismo", plan="OCA 1902/2015 · RM 518/2017", horas=1794,
       url=BASE + "2214-plan-de-estudio-tec-turismo?catid=184:planes-de-estudio&Itemid=1106", notas=[],
       filas=f"""
 {IN}|1||SA|291|Taller de Introducción a la Vida Universitaria|III|1||16||
@@ -418,7 +418,8 @@ def todas():
 
 if __name__ == "__main__":
     for c in todas():
-        codes = [m["cod"] for m in c["materias"]]
+        assert c.get("nivel") in ("grado", "pregrado"), f'{c["id"]}: falta nivel ("grado" o "pregrado")'
+        codes =[m["cod"] for m in c["materias"]]
         dup = {x for x in codes if codes.count(x) > 1}
         miss = sorted({x for m in c["materias"] for x in m["corr"] if x not in codes})
         print(f'{c["id"]:24} {len(codes):3} materias  duplicados={dup or "-"}  correlativas sin materia={miss or "-"}')

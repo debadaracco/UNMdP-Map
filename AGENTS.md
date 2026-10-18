@@ -40,13 +40,15 @@ No hay npm, bundler ni tests automáticos. Las únicas dependencias externas son
 Cada carrera en `CARRERAS` (`datos/carreras.py`):
 
 ```python
-dict(id="economia", nombre="Licenciatura en Economía", plan="Plan E (2005) · RM 1281/2019", horas=2906,
+dict(id="economia", nivel="grado", nombre="Licenciatura en Economía", plan="Plan E (2005) · RM 1281/2019", horas=2906,
      url=BASE + "...",            # plan oficial
      notas=["..."],               # aclaraciones e inconsistencias del plan oficial
      filas=f"""
 {CB}|1|1|EC|101|Introducción a la Economía|I|6||96||
 """)
 ```
+
+`nivel` es `"grado"` (Contador y licenciaturas) o `"pregrado"` (tecnicaturas y Profesorado); el validador lo exige. La sección "Doble titulación" del visor se muestra solo en carreras de grado y compara solo contra otras de grado: lista las materias de la otra carrera cuyo código no está en la actual (requisitos instrumentales incluidos), con orientación y optativas aparte.
 
 Cada línea de `filas` tiene **12 campos** separados por `|` (el parser lo verifica con un assert):
 
@@ -64,7 +66,7 @@ ciclo | año | cuat | área | cód | nombre | grupo | hs/sem | hs bim | hs cuat 
 ## Sumar una carrera o una facultad
 
 1. Transcribir el plan desde el sitio oficial de la facultad. Poner la URL en `url` y la ordenanza/resolución en `plan`.
-2. Agregar el `dict` a `CARRERAS`. Para otra facultad, conviene un módulo propio (por ejemplo `datos/carreras_<facultad>.py`) con el mismo formato y reusando `parse()`.
+2. Agregar el `dict` a `CARRERAS`, con su `nivel`. Para otra facultad, conviene un módulo propio (por ejemplo `datos/carreras_<facultad>.py`) con el mismo formato y reusando `parse()`.
 3. En `datos/facultades.py`, asignar `carreras=` a la facultad y definir `regla` (`"reg"` o `"ok"`), `vigencia` y `notas` si corresponde. Una facultad sin carreras aparece como "(próximamente)".
 4. En `build_xlsx_all.py`, agregar el nombre corto de la carrera en `SHORT` (es el nombre de la hoja; Excel admite hasta 31 caracteres). La planilla y el título de la hoja Resumen hoy están armados solo para FCEyS: generalizarlos si se suma otra facultad.
 5. En `visor_template.html`, el texto del link de fuente (`build()`) dice "eco.mdp.edu.ar" fijo: sacar el dominio de `C.url` antes de publicar otra facultad.

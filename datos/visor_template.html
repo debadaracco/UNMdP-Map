@@ -75,7 +75,7 @@ svg{display:block;min-width:900px;width:100%;height:auto}
 .notes h3{font-family:var(--f-display);font-size:.95rem;margin:0 0 6px}
 .notes ul{margin:0;padding-left:18px;color:var(--muted);line-height:1.55;max-width:80ch}
 .src{color:var(--muted);font-size:13px;margin:0} .src a{color:var(--accent)}
-.dobles{display:grid;gap:8px}
+.dobles{display:grid;gap:8px} .dobles[hidden]{display:none}
 .dobles h3{font-family:var(--f-display);font-size:.95rem;margin:0}
 .dobles details{background:var(--surface);border:1px solid var(--line);border-radius:8px}
 .dobles summary{cursor:pointer;padding:10px 14px;display:flex;flex-wrap:wrap;gap:2px 12px;align-items:baseline}
@@ -96,7 +96,7 @@ svg{display:block;min-width:900px;width:100%;height:auto}
   <header>
     <p class="eyebrow" id="eyebrow">UNMdP Map</p>
     <h1 id="titulo">Correlatividades</h1>
-    <p>Tocá una materia para ver qué necesita (azul) y qué habilita (naranja). Marcá si tenés la cursada aprobada o la materia aprobada, y el grafo recalcula qué podés cursar y qué finales podés rendir. Lo que marcás cuenta en todas las carreras de la facultad que comparten esa materia. Tu avance queda guardado en este navegador. Debajo del mapa ves qué te faltaría para sumar otra carrera de la facultad.</p>
+    <p>Tocá una materia para ver qué necesita (azul) y qué habilita (naranja). Marcá si tenés la cursada aprobada o la materia aprobada, y el grafo recalcula qué podés cursar y qué finales podés rendir. Lo que marcás cuenta en todas las carreras de la facultad que comparten esa materia. Tu avance queda guardado en este navegador.</p>
   </header>
   <div class="pick">
     <div class="field"><label for="facultad">Facultad</label><select id="facultad"></select></div>
@@ -120,8 +120,8 @@ svg{display:block;min-width:900px;width:100%;height:auto}
   </fieldset>
   <div class="detail" id="detail"><span class="meta">Ninguna materia seleccionada.</span></div>
   <div class="graph"><svg id="g" role="img" aria-label="Grafo de correlatividades"></svg></div>
-  <section class="dobles" aria-labelledby="dobles-t"><h3 id="dobles-t">Doble titulación</h3>
-    <p class="src">Materias que te faltarían sumar para recibirte también de otra carrera de la facultad, según los planes (las que comparten no se repiten). Las condiciones para la doble titulación las define la facultad: consultalas antes de inscribirte.</p>
+  <section class="dobles" aria-labelledby="dobles-t"><h3 id="dobles-t">Doble titulación con otras carreras de grado</h3>
+    <p class="src">Materias que te faltarían sumar para recibirte también de otra carrera de grado de la facultad, según los planes (las que comparten no se repiten). Las condiciones para la doble titulación las define la facultad: consultalas antes de inscribirte.</p>
     <div id="dobles"></div></section>
   <section class="notes"><h3>Notas del plan</h3><ul id="notas"></ul></section>
   <p class="src" id="src"></p>
@@ -291,18 +291,20 @@ function ajustarPosteriores(cod) {
 
 const lugarDe = m => !m.anio ? "Requisito instrumental" : m.anio[0] === "O" ? "Optativa " + (m.orientacion || "") : `${m.anio}º año${m.cuat ? ", " + (m.cuat.includes("/") ? "cuat. " + m.cuat : m.cuat + "º cuat.") : ", ingreso"}`;
 
-// Doble titulación: para cada otra carrera de la facultad que comparte materias, lista las que no están en la actual.
-// Orientación y optativas van aparte porque no son todas obligatorias.
+// Doble titulación (solo entre carreras de grado): para cada otra carrera de grado que comparte materias,
+// lista las que no están en la actual. Orientación y optativas van aparte porque no son todas obligatorias.
 const abiertas = new Set();
 function renderDobles() {
-  const box = document.getElementById("dobles");
-  const otras = F.carreras.filter(D => D.id !== C.id).map(D => {
+  const box = document.getElementById("dobles"), sec = box.parentElement;
+  sec.hidden = C.nivel !== "grado";
+  if (sec.hidden) return;
+  const otras = F.carreras.filter(D => D.id !== C.id && D.nivel === "grado").map(D => {
     const comunes = D.materias.filter(m => known(m.cod)).length;
     const nuevas = D.materias.filter(m => !known(m.cod));
     const extra = nuevas.filter(m => !ALT.has(m.ciclo)), alt = nuevas.filter(m => ALT.has(m.ciclo));
     return { D, comunes, extra, alt, faltan: extra.filter(m => lvl(m.cod) < 2).length };
   }).filter(o => o.comunes).sort((a, b) => a.faltan - b.faltan || b.comunes - a.comunes);
-  if (!otras.length) { box.innerHTML = '<p>Ninguna otra carrera de la facultad comparte materias con esta.</p>'; return; }
+  if (!otras.length) { box.innerHTML = '<p>Ninguna otra carrera de grado de la facultad comparte materias con esta.</p>'; return; }
   const item = m => { const s = lvl(m.cod) === 2 ? "ok" : lvl(m.cod) === 1 ? "reg" : "";
     return `<li><span class="code">${esc(m.cod)}</span> ${esc(m.nombre)} <small>${esc(lugarDe(m))}</small>${s ? ` <span class="chip ${s}">${LABEL[s]}</span>` : ""}</li>`; };
   box.innerHTML = otras.map(({ D, comunes, extra, alt, faltan }) => `<details data-id="${esc(D.id)}"${abiertas.has(D.id) ? " open" : ""}>
