@@ -82,6 +82,20 @@ svg{display:block;min-width:900px;width:100%;height:auto}
 .notes h3{font-family:var(--f-display);font-size:.95rem;margin:0 0 6px}
 .notes ul{margin:0;padding-left:18px;color:var(--muted);line-height:1.55;max-width:80ch}
 .src{color:var(--muted);font-size:13px;margin:0} .src a{color:var(--accent)}
+.dobles{display:grid;gap:8px}
+.dobles h3{font-family:var(--f-display);font-size:.95rem;margin:0}
+.dobles details{background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.dobles summary{cursor:pointer;padding:10px 14px;display:flex;flex-wrap:wrap;gap:2px 12px;align-items:baseline}
+.dobles summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+.dobles summary b{font-family:var(--f-display)} .dobles summary span{color:var(--muted);font-size:14px}
+.dobles .body{padding:0 14px 12px;display:grid;gap:10px}
+.dobles ul{list-style:none;margin:0;padding:0;display:grid;gap:6px 16px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.dobles li{display:flex;flex-wrap:wrap;gap:2px 8px;align-items:baseline;min-width:0}
+.dobles li .code{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.dobles li small{color:var(--muted);font-size:12.5px}
+.dobles .chip{padding:1px 8px;font-size:12px}
+.dobles p{margin:0;color:var(--muted);font-size:14px}
+.dobles button{justify-self:start}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -90,7 +104,7 @@ svg{display:block;min-width:900px;width:100%;height:auto}
   <header>
     <p class="eyebrow" id="eyebrow">UNMdP Map</p>
     <h1 id="titulo">Correlatividades</h1>
-    <p>Tocá una materia para ver qué necesita (azul) y qué habilita (naranja). Marcá si tenés la cursada aprobada o la materia aprobada, y el grafo recalcula qué podés cursar y qué finales podés rendir. Lo que marcás cuenta en todas las carreras de la facultad que comparten esa materia. Tu avance queda guardado en este navegador.</p>
+    <p>Tocá una materia para ver qué necesita (azul) y qué habilita (naranja). Marcá si tenés la cursada aprobada o la materia aprobada, y el grafo recalcula qué podés cursar y qué finales podés rendir. Lo que marcás cuenta en todas las carreras de la facultad que comparten esa materia. Tu avance queda guardado en este navegador. Debajo del mapa ves qué te faltaría para sumar otra carrera de la facultad.</p>
   </header>
   <div class="pick">
     <div class="field"><label for="facultad">Facultad</label><select id="facultad"></select></div>
@@ -114,6 +128,9 @@ svg{display:block;min-width:900px;width:100%;height:auto}
   </fieldset>
   <div class="detail" id="detail"><span class="meta">Ninguna materia seleccionada.</span></div>
   <div class="graph"><svg id="g" role="img" aria-label="Grafo de correlatividades"></svg></div>
+  <section class="dobles" aria-labelledby="dobles-t"><h3 id="dobles-t">Doble titulación</h3>
+    <p class="src">Materias que te faltarían sumar para recibirte también de otra carrera de la facultad, según los planes (las que comparten no se repiten). Las condiciones para la doble titulación las define la facultad: consultalas antes de inscribirte.</p>
+    <div id="dobles"></div></section>
   <section class="notes"><h3>Notas del plan</h3><ul id="notas"></ul></section>
   <p class="src" id="src"></p>
 </div>
@@ -280,6 +297,32 @@ function ajustarPosteriores(cod) {
   return [...cambiadas].sort((a, b) => parseInt(a) - parseInt(b) || a.localeCompare(b));
 }
 
+const lugarDe = m => !m.anio ? "Requisito instrumental" : m.anio[0] === "O" ? "Optativa " + (m.orientacion || "") : `${m.anio}º año${m.cuat ? ", " + (m.cuat.includes("/") ? "cuat. " + m.cuat : m.cuat + "º cuat.") : ", ingreso"}`;
+
+// Doble titulación: para cada otra carrera de la facultad que comparte materias, lista las que no están en la actual.
+// Orientación y optativas van aparte porque no son todas obligatorias.
+const abiertas = new Set();
+function renderDobles() {
+  const box = document.getElementById("dobles");
+  const otras = F.carreras.filter(D => D.id !== C.id).map(D => {
+    const comunes = D.materias.filter(m => known(m.cod)).length;
+    const nuevas = D.materias.filter(m => !known(m.cod));
+    const extra = nuevas.filter(m => !ALT.has(m.ciclo)), alt = nuevas.filter(m => ALT.has(m.ciclo));
+    return { D, comunes, extra, alt, faltan: extra.filter(m => lvl(m.cod) < 2).length };
+  }).filter(o => o.comunes).sort((a, b) => a.faltan - b.faltan || b.comunes - a.comunes);
+  if (!otras.length) { box.innerHTML = '<p>Ninguna otra carrera de la facultad comparte materias con esta.</p>'; return; }
+  const item = m => { const s = lvl(m.cod) === 2 ? "ok" : lvl(m.cod) === 1 ? "reg" : "";
+    return `<li><span class="code">${esc(m.cod)}</span> ${esc(m.nombre)} <small>${esc(lugarDe(m))}</small>${s ? ` <span class="chip ${s}">${LABEL[s]}</span>` : ""}</li>`; };
+  box.innerHTML = otras.map(({ D, comunes, extra, alt, faltan }) => `<details data-id="${esc(D.id)}"${abiertas.has(D.id) ? " open" : ""}>
+    <summary><b>${esc(D.nombre)}</b><span>Comparte ${comunes} materia${comunes > 1 ? "s" : ""} · ${faltan ? `te falta${faltan > 1 ? "n" : ""} ${faltan} materia${faltan > 1 ? "s" : ""} más` : "ya aprobaste todas las materias extra obligatorias"}${extra.length > faltan ? ` (aprobaste ${extra.length - faltan} de ${extra.length})` : ""}</span></summary>
+    <div class="body">
+      ${extra.length ? `<ul>${extra.map(item).join("")}</ul>` : "<p>No tiene materias obligatorias que no estén en tu carrera.</p>"}
+      ${alt.length ? `<p>Además, según el plan, elegí entre estas materias de orientación u optativas:</p><ul>${alt.map(item).join("")}</ul>` : ""}
+      <button type="button" data-ver="${esc(D.id)}">Ver el mapa de ${esc(D.nombre)}</button>
+    </div></details>`).join("");
+  box.querySelectorAll("details").forEach(d => d.addEventListener("toggle", () => d.open ? abiertas.add(d.dataset.id) : abiertas.delete(d.dataset.id)));
+}
+
 function render() {
   const n = { ok: 0, reg: 0, go: 0, no: 0 };
   mats.forEach(m => {
@@ -288,6 +331,7 @@ function render() {
     nd.code.textContent = m.cod + (s === "reg" ? (puedeRendir(m) ? " · puede rendir" : " · cursada") : nd.tag);
   });
   ["ok", "reg", "go", "no"].forEach(k => document.getElementById("c-" + k).textContent = n[k]);
+  renderDobles();
   svg.classList.toggle("dim", !!sel);
   const A = sel ? walk(by[sel].corr.filter(known), x => by[x].corr.filter(known)) : new Set();
   const D = sel ? walk(deps[sel] || [], x => deps[x] || []) : new Set();
@@ -302,7 +346,7 @@ function render() {
   const raros = m.corr.filter(c => !known(c));
   const estadoTxt = s === "go" ? "Podés cursarla." : s === "no" ? `Para cursarla te falta${faltaCursar.length > 1 ? "n" : ""} ${need() === 2 ? "aprobar" : "tener la cursada de"}: ${faltaCursar.join(", ")}.`
     : s === "reg" ? (faltaFinal.length ? `Para rendir el final te falta${faltaFinal.length > 1 ? "n" : ""} aprobar: ${faltaFinal.join(", ")}.` : "Podés rendir el final.") + (F.vigencia ? " " + F.vigencia : "") : "";
-  const lugar = !m.anio ? "Requisito instrumental" : m.anio[0] === "O" ? "Optativa " + (m.orientacion || "") : `${m.anio}º año${m.cuat ? ", " + (m.cuat.includes("/") ? "cuat. " + m.cuat : m.cuat + "º cuat.") : ", ingreso"}`;
+  const lugar = lugarDe(m);
   const hs = [m.hs_sem && m.hs_sem + " hs/sem", m.hs_cuat && m.hs_cuat + " hs cuatrimestrales", m.hs_bim && m.hs_bim + " hs bimestrales"].filter(Boolean).join(", ");
   d.innerHTML = `<span class="code">${esc(m.cod)}</span><h2>${esc(m.nombre)}</h2>
     <span class="chip ${s}">${LABEL[s]}</span>
@@ -332,6 +376,11 @@ const byCarrera = !h2 && FACULTADES.find(f => f.carreras.some(c => c.id === h1))
 pickFacultad(byCarrera ? byCarrera.id : h1, byCarrera ? h1 : h2);
 facEl.addEventListener("change", () => { pickFacultad(facEl.value); setHash(); });
 selEl.addEventListener("change", () => { setHash(); build(selEl.value); });
+document.getElementById("dobles").addEventListener("click", e => {
+  const b = e.target.closest("[data-ver]"); if (!b) return;
+  selEl.value = b.dataset.ver; setHash(); build(selEl.value);
+  window.scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+});
 const conf = document.getElementById("confirm");
 document.getElementById("reset").onclick = () => conf.hidden = false;
 document.getElementById("reset-no").onclick = () => conf.hidden = true;
